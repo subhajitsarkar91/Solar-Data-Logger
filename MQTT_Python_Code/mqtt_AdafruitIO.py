@@ -11,9 +11,9 @@ def random_val(min_val,max_val):
  return random.randint(min_val,max_val)
 
 # Set to your Adafruit IO key.
-ADAFRUIT_IO_KEY = 'aio_Bmmo70L3tu3mqwTemePsas1RQ78C'
+ADAFRUIT_IO_KEY = 'aio_###############'
 # Set to your Adafruit IO username.
-ADAFRUIT_IO_USERNAME = 'subhajitsarkar91'
+ADAFRUIT_IO_USERNAME = '#############'
 
 def connected(client):
     print('Connected to Adafruit IO!  Listening for changes...')
