@@ -25,6 +25,7 @@ def on_publish(client,userdata,mid):
     print("On_publish message Id",mid)
 mqtt.Client.connected_flag=False
 client1 = mqtt.Client("control@localhost:1883")
+client1.username_pw_set(username="subhajit",password="subhajitsarkar")
 #client1.tls_set('/home/pi/mqtt/ssl/ca.crt')
 client1.on_log=on_log
 client1.on_connect=on_connect
@@ -32,6 +33,10 @@ client1.on_disconnect=on_disconnect
 client1.on_publish=on_publish
 client1.connect(broker,port)
 client1.loop_start()
+     #connect to broker
+# while not client1.connected_flag: #wait in loop
+#     print("In wait loop")
+#     time.sleep(1)
 ser=serial.Serial('/dev/ttyACM0', 115200)
 #Here /dev/ttyUSB2 is used
 #It can be different in your case like /dev/ttyUSB0, /dev/ttyUSB1 etc.
