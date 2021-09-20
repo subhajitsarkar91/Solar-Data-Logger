@@ -1,0 +1,875 @@
+[
+    {
+        "id": "522a3f32048d755d",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "d3dfe3a4deeea90e",
+        "type": "mqtt in",
+        "z": "522a3f32048d755d",
+        "name": "",
+        "topic": "LDR/LDR4",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "7391f003b22f3ef6",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 480,
+        "y": 260,
+        "wires": [
+            [
+                "3c5e35e19ff37226",
+                "caf68d5094dc838b",
+                "16affae58fc11374"
+            ]
+        ]
+    },
+    {
+        "id": "3c5e35e19ff37226",
+        "type": "debug",
+        "z": "522a3f32048d755d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "caf68d5094dc838b",
+        "type": "ui_chart",
+        "z": "522a3f32048d755d",
+        "name": "",
+        "group": "99a495f7b902bca7",
+        "order": 0,
+        "width": "16",
+        "height": "6",
+        "label": "LUX",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "1000",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#58310e",
+            "#2ca02c",
+            "#98df8a",
+            "#ce1c1c",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 680,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bb03cfdeb2f13636",
+        "type": "mqtt in",
+        "z": "522a3f32048d755d",
+        "name": "",
+        "topic": "LDR/LDR2",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "7391f003b22f3ef6",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 480,
+        "y": 100,
+        "wires": [
+            [
+                "f11f0fdbffaecf35",
+                "26792ff2e20ef6d9",
+                "16affae58fc11374"
+            ]
+        ]
+    },
+    {
+        "id": "f11f0fdbffaecf35",
+        "type": "debug",
+        "z": "522a3f32048d755d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "26792ff2e20ef6d9",
+        "type": "ui_chart",
+        "z": "522a3f32048d755d",
+        "name": "",
+        "group": "99a495f7b902bca7",
+        "order": 0,
+        "width": "16",
+        "height": "6",
+        "label": "LUX",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "1000",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#58310e",
+            "#2ca02c",
+            "#98df8a",
+            "#ce1c1c",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 680,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bc85c9ab1d6a72f5",
+        "type": "mqtt in",
+        "z": "522a3f32048d755d",
+        "name": "",
+        "topic": "LDR/LDR6",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "7391f003b22f3ef6",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 500,
+        "y": 420,
+        "wires": [
+            [
+                "6ca971ddaef3af80",
+                "1a1e3176ed5791a6",
+                "16affae58fc11374"
+            ]
+        ]
+    },
+    {
+        "id": "6ca971ddaef3af80",
+        "type": "debug",
+        "z": "522a3f32048d755d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "1a1e3176ed5791a6",
+        "type": "ui_chart",
+        "z": "522a3f32048d755d",
+        "name": "",
+        "group": "99a495f7b902bca7",
+        "order": 0,
+        "width": "16",
+        "height": "6",
+        "label": "LUX",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "1000",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#58310e",
+            "#2ca02c",
+            "#98df8a",
+            "#ce1c1c",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 700,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b712a2fb419a3417",
+        "type": "mqtt in",
+        "z": "522a3f32048d755d",
+        "name": "",
+        "topic": "LDR/LDR1",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "7391f003b22f3ef6",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 100,
+        "y": 120,
+        "wires": [
+            [
+                "f9533d290924894f",
+                "e804fac778292863",
+                "16affae58fc11374"
+            ]
+        ]
+    },
+    {
+        "id": "f9533d290924894f",
+        "type": "debug",
+        "z": "522a3f32048d755d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 280,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "e804fac778292863",
+        "type": "ui_chart",
+        "z": "522a3f32048d755d",
+        "name": "",
+        "group": "99a495f7b902bca7",
+        "order": 0,
+        "width": "16",
+        "height": "6",
+        "label": "LUX",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "1000",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#58310e",
+            "#2ca02c",
+            "#98df8a",
+            "#ce1c1c",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 300,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0792a6b454472395",
+        "type": "mqtt in",
+        "z": "522a3f32048d755d",
+        "name": "",
+        "topic": "LDR/LDR3",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "7391f003b22f3ef6",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 80,
+        "y": 300,
+        "wires": [
+            [
+                "a554e3e652c8c74b",
+                "7dc129ce29099242",
+                "16affae58fc11374"
+            ]
+        ]
+    },
+    {
+        "id": "a554e3e652c8c74b",
+        "type": "debug",
+        "z": "522a3f32048d755d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 260,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "7dc129ce29099242",
+        "type": "ui_chart",
+        "z": "522a3f32048d755d",
+        "name": "",
+        "group": "99a495f7b902bca7",
+        "order": 0,
+        "width": "16",
+        "height": "6",
+        "label": "LUX",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "1000",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#58310e",
+            "#2ca02c",
+            "#98df8a",
+            "#ce1c1c",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 280,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "afc59eb4266121a9",
+        "type": "mqtt in",
+        "z": "522a3f32048d755d",
+        "name": "",
+        "topic": "LDR/LDR5",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "7391f003b22f3ef6",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 100,
+        "y": 460,
+        "wires": [
+            [
+                "ae95395bbaaae3f5",
+                "ddc8e35e3c00c61c",
+                "16affae58fc11374"
+            ]
+        ]
+    },
+    {
+        "id": "ae95395bbaaae3f5",
+        "type": "debug",
+        "z": "522a3f32048d755d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 280,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "ddc8e35e3c00c61c",
+        "type": "ui_chart",
+        "z": "522a3f32048d755d",
+        "name": "",
+        "group": "99a495f7b902bca7",
+        "order": 0,
+        "width": "16",
+        "height": "6",
+        "label": "LUX",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "1000",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#58310e",
+            "#2ca02c",
+            "#98df8a",
+            "#ce1c1c",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 300,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6fda637e783cd657",
+        "type": "inject",
+        "z": "522a3f32048d755d",
+        "name": "clear",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[]",
+        "payloadType": "jsonata",
+        "x": 60,
+        "y": 60,
+        "wires": [
+            [
+                "e804fac778292863",
+                "7dc129ce29099242",
+                "ddc8e35e3c00c61c"
+            ]
+        ]
+    },
+    {
+        "id": "56ac3a5cba17a929",
+        "type": "inject",
+        "z": "522a3f32048d755d",
+        "name": "clear",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[]",
+        "payloadType": "jsonata",
+        "x": 490,
+        "y": 40,
+        "wires": [
+            [
+                "26792ff2e20ef6d9",
+                "caf68d5094dc838b",
+                "1a1e3176ed5791a6"
+            ]
+        ]
+    },
+    {
+        "id": "e7ecae7b4ee87337",
+        "type": "file",
+        "z": "522a3f32048d755d",
+        "name": "",
+        "filename": "C:\\Users\\sarkar\\Desktop\\lux.log",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 850,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c9d4d28e7f2e83c6",
+        "type": "csv",
+        "z": "522a3f32048d755d",
+        "name": "CSV_Parser",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": false,
+        "include_null_values": false,
+        "x": 570,
+        "y": 660,
+        "wires": [
+            [
+                "e7ecae7b4ee87337",
+                "3ce24aede434e199"
+            ]
+        ]
+    },
+    {
+        "id": "3ce24aede434e199",
+        "type": "file",
+        "z": "522a3f32048d755d",
+        "name": "",
+        "filename": "C:\\Users\\sarkar\\Desktop\\lux.csv",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 830,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "16affae58fc11374",
+        "type": "moment",
+        "z": "522a3f32048d755d",
+        "name": "",
+        "topic": "",
+        "input": "actualtime",
+        "inputType": "msg",
+        "inTz": "Asia/Calcutta",
+        "adjAmount": 0,
+        "adjType": "days",
+        "adjDir": "add",
+        "format": "L LT",
+        "locale": "en-US",
+        "output": "actualtime",
+        "outputType": "msg",
+        "outTz": "Asia/Calcutta",
+        "x": 200,
+        "y": 660,
+        "wires": [
+            [
+                "f17b7b17b1ddd0ae",
+                "681f54cc380226ac"
+            ]
+        ]
+    },
+    {
+        "id": "f17b7b17b1ddd0ae",
+        "type": "function",
+        "z": "522a3f32048d755d",
+        "name": "ModifyPayload",
+        "func": "var d = new Date();\nvar t = d.getTime();\n// var moment = require('moment'); // require\n\n// payload = {payload:msg.payload}\npayload={\"time\":t,\"payload\":msg.payload,\"payload1\":msg.actualtime,\"topic\":msg.topic};\n//msg.payload=JSON.stringify(payload);\nmsg.payload = payload;\n// msg.payload=payload;\n//msg.filename=\"/home/pi/logs/s1.txt\";\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 660,
+        "wires": [
+            [
+                "c9d4d28e7f2e83c6"
+            ]
+        ]
+    },
+    {
+        "id": "790f4844ebe33f4b",
+        "type": "sqlite",
+        "z": "522a3f32048d755d",
+        "mydb": "f5a33dc2.f6f08",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "Data Base",
+        "x": 510,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ae9006cb62dbc3ed",
+        "type": "inject",
+        "z": "522a3f32048d755d",
+        "name": "Database Creation",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "CREATE TABLE data(TIMESTAMP TEXT NOT NULL,LDR TEXT NOT NULL, LUX INT NOT NULL)",
+        "payloadType": "str",
+        "x": 250,
+        "y": 1080,
+        "wires": [
+            [
+                "1867cbaf4ced1969"
+            ]
+        ]
+    },
+    {
+        "id": "681f54cc380226ac",
+        "type": "function",
+        "z": "522a3f32048d755d",
+        "name": "",
+        "func": "\n// var LDR_NO = context.get(msg.Topic);\n// var LDR_NO = msg.topic; //LDR/LDR1= LDR1\n// var LUX = msg.payload; // 20\nvar LDR= msg.topic;\nvar LUX = msg.payload;\n// var SENSOR = 76;//1-6\n// var t = new Date();\n// var TIMESTAMP = t.getTime();\nvar TIMESTAMP=msg.actualtime;\n// var SENSOR = msg.actualtime;\n\nvar newMsg = {\n \"topic\": \"INSERT INTO data VALUES ( '\"+TIMESTAMP+\"','\"+LDR+\"',\"+LUX+\")\"\n}\n//console.log(newMsg);\nreturn newMsg;\n// return newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 900,
+        "wires": [
+            [
+                "ed06f2f5b4380d2a",
+                "790f4844ebe33f4b"
+            ]
+        ]
+    },
+    {
+        "id": "4e45edaaabba4c08",
+        "type": "ui_template",
+        "z": "522a3f32048d755d",
+        "group": "99a495f7b902bca7",
+        "name": "UI Table",
+        "order": 1,
+        "width": "",
+        "height": "",
+        "format": "<style>\n.table\n{\n    height:400px;\n    width:300px;\n    background:lightblue;\n}\n</style>\n<div class=\"table\">\n<table style=\"width:55%\">\n  <tr>\n    <th>DATE TIME</th> \n    <th>LDR</th> \n    <th>LUX</th>\n  \n  </tr>\n  <tr ng-repeat=\"x in msg.payload | limitTo:100\">\n    <td>{{msg.payload[$index].TIMESTAMP}}</td>\n    <td>{{msg.payload[$index].SENSOR}}</td>\n    <td>{{msg.payload[$index].LUX}}</td>\n\n  </tr>\n</table>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 700,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "483c9d58f9d905ba",
+        "type": "inject",
+        "z": "522a3f32048d755d",
+        "name": "Data Show",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "SELECT * FROM DATA ORDER BY TIMESTAMP DESC LIMIT 100",
+        "payloadType": "date",
+        "x": 220,
+        "y": 980,
+        "wires": [
+            [
+                "1867cbaf4ced1969"
+            ]
+        ]
+    },
+    {
+        "id": "1867cbaf4ced1969",
+        "type": "sqlite",
+        "z": "522a3f32048d755d",
+        "mydb": "f5a33dc2.f6f08",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "Data Base",
+        "x": 490,
+        "y": 1000,
+        "wires": [
+            [
+                "4e45edaaabba4c08"
+            ]
+        ]
+    },
+    {
+        "id": "ed06f2f5b4380d2a",
+        "type": "debug",
+        "z": "522a3f32048d755d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "36a122ccd0d92c87",
+        "type": "ui_spacer",
+        "z": "522a3f32048d755d",
+        "name": "spacer",
+        "group": "99a495f7b902bca7",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "77ad425f0215e0cd",
+        "type": "ui_spacer",
+        "z": "522a3f32048d755d",
+        "name": "spacer",
+        "group": "99a495f7b902bca7",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7391f003b22f3ef6",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "control",
+        "usetls": false,
+        "protocolVersion": "3",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "99a495f7b902bca7",
+        "type": "ui_group",
+        "name": "LUX meter",
+        "tab": "e6f129406d3dd178",
+        "order": 1,
+        "disp": true,
+        "width": "16",
+        "collapse": true
+    },
+    {
+        "id": "f5a33dc2.f6f08",
+        "type": "sqlitedb",
+        "db": "C:\\Users\\sarkar\\Desktop\\db\\mqtt.db",
+        "mode": "RWC"
+    },
+    {
+        "id": "e6f129406d3dd178",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
